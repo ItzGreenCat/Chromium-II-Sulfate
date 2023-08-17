@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "crso4",
+  "version": "${version}",
+  "name": "Chromium-II-Sulfate",
+  "description": "A Minecraft Mod that can help you control log output.",
+  "authors": [
+    "GreenCat"
+  ],
+  "contact": {
+    "repo": "https://github.com/greencat/Chromium-II-Sulfate"
+  },
+  "license": "MIT",
+  "icon": "assets/crso4/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.greencat.crso4.CRSO4"
+    ],
+    "modmenu": [ "me.greencat.crso4.ModMenuEntry" ]
+  },
+  "mixins": [
+    "crso4.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "dependencies": {
+    "yet_another_config_lib_v3": "*"
+  }
+}
